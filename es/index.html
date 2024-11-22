@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airtext - Atajos para tus textos</title>
+    <meta name="description" content="Airtext transforma los atajos en textos listos para usar, aumentando su productividad de forma rápida y sencilla. ¡Instálalo gratis y ahorra tiempo!" />
+    <meta name="keywords" content="atajo de texto, atajos de texto, expansor de texto, atajos para whatsapp, atajos de texto para whatsapp" />
+    <link rel="icon" type="image/png" href="../assets/icone32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script>
+        const userLang = navigator.language || navigator.languages[0];
+        if (userLang.startsWith("pt")) {
+            window.location.href = "/pt";
+        } else if (userLang.startsWith("en")) {
+            window.location.href = "/";
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <div style="display: flex; justify-content: space-between; align-items: center; width: 1180px;">
+            <div id="logo" style="display: flex; max-width: fit-content">
+                <img src="../assets/icone32.png" width="32" height="32">
+                <span style="font-weight: 700; font-size: 30px; margin-top: 4px; color: #222; line-height: 1;">Airtext</span>
+            </div>
+            <a href="https://airtext.net" class="botao-header">Instalar gratis</a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="container-cta">
+            <div class="cta">
+                <span style="font-weight: 700; font-size: 46px; line-height: 1.2;">
+                    Tus atajos y tu productividad, a la velocidad del viento
+                </span>
+                <span style="font-size: 20px; color: #616161; margin: 25px 0; line-height: 1.4;">
+                    Transforma textos repetitivos en comandos rápidos y haz tu día más ágil y eficiente
+                </span>
+                <a class="botao" href="https://airtext.net">Empezar a producir más 🌪️</a>
+            </div>
+            <div class="cta-box">
+                <span id="dynamic-text"></span>
+            </div>
+        </div>
+
+        <span style="font-size: 24px; color: #616161; margin-bottom: 10px; text-align: center;">
+            Pruébalo ahora:
+        </span>
+        <textarea id="teste" placeholder="Escriba **prueba o haga clic derecho"></textarea>
+        <ul id="custom-context-menu">
+            <li id="insert-shortcut">**prueba</li>
+        </ul>
+
+        <section>
+            <div class="container-features">
+
+                <span style="font-weight: 700; font-size: 40px; text-align: center; line-height: 1.2;">
+                    🌪️ Instala un tornado en tu productividad
+                </span>
+                <span style="font-size: 24px; text-align: center; color: #616161;">
+                    Automatiza tu mecanografía, evitando errores y ahorrando tiempo
+                </span>
+
+                <div class="features">
+                    <div class="card">
+                        <img alt="Expandir Textos" style="border-radius: 10px; margin-right: 15px" src="../assets/text-expander-custom-shortcuts.webp" width="70"><span><strong>Atajos personalizados</strong> que se expanden en textos completos.</span>
+                    </div>
+                    <div class="card">
+                        <img alt="Expandir Textos" style="border-radius: 10px; margin-right: 15px" src="../assets/text-expander-time.webp" width="70"><span>Reemplace comandos con textos listos para usar en cualquier campo de la web<strong> y ahorre tiempo en tareas repetitivas</strong>.</span>
+                    </div>
+                </div>
+
+                <div class="features" style="align-self: flex-start;">
+                    <div class="card">
+                        <img alt="Expandir Textos" style="border-radius: 10px; margin-right: 15px" src="../assets/text-expander-text-field.webp" width="70"><span><strong>Compatible con cualquier campo de entrada de texto</strong>: correo electrónico, formularios, WhatsApp Web, chatbots, editores de programación...</span>
+                    </div>
+                    <div class="card">
+                        <img alt="Expandir Textos" style="border-radius: 10px; margin-right: 15px" src="../assets/text-expander-right-mouse.webp" width="70"><span>La extensión <strong>reemplaza tu comando con el texto completo</strong> mientras escribes o puedes elegir el acceso directamente con el botón derecho del mouse.</span>
+                    </div>
+                </div>
+
+                <div class="features" style="align-self: flex-end;">
+                    <div class="card">
+                        <img alt="Expandir Textos" style="border-radius: 10px; margin-right: 15px" src="../assets/text-expander-keyboard.webp" width="70"><span>Es la <strong>extensión ideal para quienes trabajan con mucha escritura</strong>, como redacción, soporte, marketing, etc.</span>
+                    </div>
+                    <div class="card">
+                        <img alt="Expandir Textos" style="border-radius: 10px; margin-right: 15px" src="../assets/text-expander-automation.webp" width="70"><span>Ahorre horas al día con la <strong>automatización simple y eficaz</strong> de Airtext.</span>
+                    </div>
+                </div>
+
+                <div class="features" style="align-self: flex-start;">
+                    <div class="card">
+                        <img alt="Expandir Textos" style="border-radius: 10px; margin-right: 15px" src="../assets/text-expander-idea.webp" width="70"><span>Tenga más tiempo para tareas importantes y<strong> produzca más en menos tiempo</strong>.</span>
+                    </div>
+                    <div class="card">
+                        <img alt="Expandir Textos" style="border-radius: 10px; margin-right: 15px" src="../assets/text-expander-easy.webp" width="70"><span>Interfaz intuitiva y <strong>fácil de usar</strong>.</span>
+                    </div>
+                </div>
+
+                <span style="font-weight: 700; font-size: 40px; text-align: center; line-height: 1.2; margin-top: 100px;">
+                    Airtext te ayuda a ahorrar hasta <span style="text-decoration-line: underline;
+                    text-decoration-style: double; color: #4285f4;">25 horas</span> al mes
+                </span>
+
+                <div class="container-statistics">
+                    <div class="card-statistics">
+                        <span style="font-weight: 700; font-size: 36px; text-align: center;">
+                            ⬆️
+                        </span>
+                        <span style="font-weight: 400; font-size: 22px; text-align: center;">
+                            en la productividad
+                        </span>
+                        <span style="font-weight: 400; font-size: 16px; text-align: center; color: #616161; margin-top: 10px;">
+                            usar atajos en lugar de copiar y pegar
+                        </span>
+                    </div>
+                    <div class="card-statistics">
+                        <span style="font-weight: 700; font-size: 36px; text-align: center;">
+                            ⌨️
+                        </span>
+                        <span style="font-weight: 400; font-size: 22px; text-align: center;">
+                            ahorro
+                        </span>
+                        <span style="font-weight: 400; font-size: 16px; text-align: center; color: #616161; margin-top: 10px;">
+                            en escritura normal de textos largos en el teclado
+                        </span>
+                    </div>
+                    <div class="card-statistics">
+                        <span style="font-weight: 700; font-size: 36px; text-align: center;">
+                            ❌
+                        </span>
+                        <span style="font-weight: 400; font-size: 22px; text-align: center;">
+                            menos errores
+                        </span>
+                        <span style="font-weight: 400; font-size: 16px; text-align: center; color: #616161; margin-top: 10px;">
+                            causado por escribir en el acto, sin revisión
+                        </span>
+                    </div>
+                    <div class="card-statistics">
+                        <span style="font-weight: 700; font-size: 36px; text-align: center;">
+                            👥
+                        </span>
+                        <span style="font-weight: 400; font-size: 22px; text-align: center;">
+                            usuarios felices
+                        </span>
+                        <span style="font-weight: 400; font-size: 16px; text-align: center; color: #616161; margin-top: 10px;">
+                            producir más en menos tiempo
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container-tutorial">            
+                <div class="tutorial">
+                    <div>
+                        <h2>Paso 1: Convierta los Accesos Directos en Textos Completos</h2>
+                        <p>Elige el comando que más te convenga para crear tu acceso directo. Ejemplos:
+                            <b>
+                            <br/>*gracias
+                            <br/>/email
+                            <br/>:nombre
+                            <br/>[tutorial]
+                            <br/>--respuesta-wp
+                            </b>
+                        </p>
+                    </div>
+                    <img src="/assets/airtext-auto-text-expander-es-1.png" alt="Textos expandidos de Airtext: accesos directos" style="width: 400px; height: auto;">
+                </div>
+                <div class="tutorial">
+                    <img src="/assets/airtext-auto-text-expander-es-2.png" alt="Textos expandidos de Airtext - Expansor de texto" style="width: 400px; height: auto;">
+                    <div>
+                        <h2>Paso 2: Funciona en Todos los Campos de Texto</h2>
+                        <p>Escriba su acceso directo en cualquier sitio web y será reemplazado con el texto completo.</p>
+                    </div>
+                </div>
+                <div class="tutorial">
+                    <div>
+                        <h2>Paso 3: Acceso Rápido y Sencillo</h2>
+                        <p>Si olvidó su acceso directo, haga clic derecho en el cuadro y seleccione sus accesos directos directamente desde el menú <b>Airtext</b>, ¡separados en categorías!</p>
+                    </div>
+                    <img src="/assets/airtext-auto-text-expander-es-3.png" alt="Textos expandidos de Airtext: accesos directos" style="width: 400px; height: auto;">
+                </div>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-header">
+                      <div><span class="numero">01</span><span class="faq-title">¿Qué es AirText?</span></div>
+                      <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-content">
+                        Airtext es una extensión del navegador que le permite reemplazar los atajos escritos con textos predefinidos, aumentando su productividad.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <div><span class="numero">02</span><span class="faq-title">¿Cómo funciona?</span></div>
+                      <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-content">
+                        Defines atajos como "**email**" y asignas textos largos como "micorreoelectronico@ejemplo.com". Cuando escribe el acceso directo, el texto largo se inserta automáticamente.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <div><span class="numero">03</span><span class="faq-title">¿Por qué utilizar un expansor de texto?</span></div>
+                      <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-content">
+                        Los expansores de texto son una poderosa herramienta de productividad para aumentar la productividad empresarial y personal. Al automatizar las tareas de escritura repetitivas, ahorran tiempo y esfuerzo, lo que le permite concentrarse en actividades de nivel superior.
+                        <br/><br/>
+                        Las empresas pueden crear fragmentos estandarizados o atajos de teclado para frases de uso frecuente, respuestas predeterminadas, automatizar la entrada de datos, plantillas de correo electrónico para solicitudes de reuniones e incluso descripciones de productos, lo que garantiza la coherencia de la marca en todos los equipos. Esto no sólo ahorra tiempo, sino que también garantiza precisión y profesionalidad en la comunicación con el cliente.
+                        <br/><br/>
+                        Beneficios personales: aumenta la eficiencia operativa, la productividad personal y personaliza la comunicación mucho más rápido de lo que puede escribirlo todo. Las personas pueden aprovechar los expansores de texto para saludos de correo electrónico, direcciones o incluso firmas complejas de uso frecuente. Además, los expansores de texto se pueden utilizar para almacenar e insertar fragmentos personalizados como chistes, citas inspiradoras o exenciones de responsabilidad, agregando un toque de personalidad a su comunicación.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <div><span class="numero">04</span><span class="faq-title">¿Dónde instalo Airtext?</span></div>
+                      <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-content">
+                        Simplemente haga clic en los botones del sitio web y será redirigido a Chrome Web Store, la tienda de extensiones de Google Chrome.
+                        <br/><br/>
+                        Allí, simplemente haga clic en el botón "Agregar" y la extensión estará lista para usar.
+                        <br/><br/>
+                        En el navegador, haga clic en el ícono de rompecabezas en la parte superior derecha y haga clic en el ícono de alfiler al lado del texto de Airtext, y luego la extensión se fijará en la barra de marcadores del navegador. Simplemente haga clic en el ícono del huracán para abrir la aplicación, registrarse y comenzar a insertar sus accesos directos y categorías.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <div><span class="numero">05</span><span class="faq-title">¿Por qué utilizar Airtext y no otros?</span></div>
+                      <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-content">
+                        Airtext valora la simplicidad y la funcionalidad. Su uso es fácil, rápido y económico, a diferencia de otros expansores de texto como Text Blaze, FlyMSG, Text Expander, Magical y Web Text Expander, que tienen demasiadas funciones que suponen más un estorbo que una ayuda.
+                        <br/><br/>
+                        Además, Airtext funciona en todos los sitios web con un campo de texto, incluido Whatsapp Web, mientras que algunos ni siquiera se han actualizado en Chrome Store y realmente no funcionan en múltiples campos de texto.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <div><span class="numero">06</span><span class="faq-title">¿Es gratis?</span></div>
+                      <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-content">
+                        ¡Sí! Airtext ofrece 15 atajos gratuitos y un plan PRO para quienes necesitan más por € 9,90 <b>AL AÑO (menos de 3 centavos al día, ¡una relación calidad-precio inmejorable!)</b>.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <div><span class="numero">07</span><span class="faq-title">¿Qué pasa si necesito ayuda?</span></div>
+                      <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-content">
+                        Puede utilizar nuestra página <a href="ayuda" target="blank">AYUDA</a> o contactarnos por correo electrónico a <strong>landowskiapps@gmail.com</strong>.
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-bottom">
+                <span style="font-weight: 700; font-size: 46px; text-align: center; line-height: 1.2;">
+                    Simplifica tu rutina con Airtext
+                </span>
+                <span style="font-size: 20px; text-align: center; color: #616161; line-height: 1.4;">
+                    Empiece a ahorrar tiempo y energía ahora con atajos inteligentes.
+                    <br/>
+                    ¡Instálelo gratis y vea la diferencia!
+                </span>
+                <a class="botao" href="https://airtext.net" style="align-self: center;">👉 Instálelo ahora y acelere su productividad</a>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>Airtext <span id="date"></span></p> • <a href="ayuda" target="_blank">Ayuda</a> • <a href="privacidad" target="_blank">Política de Privacidad</a>
+        </footer>
+    </div>
+
+    <script src="../js/index-es.js"></script>
+
+</body>
+</html>
