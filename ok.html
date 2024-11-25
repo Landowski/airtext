@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Airtext PRO</title>
+    <link rel="icon" type="image/png" href="assets/icone32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            font-family: "Inter", sans-serif;
+            color: #111;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+
+        h2 {
+            margin: 0;
+            margin-bottom: 5px;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        button {
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            cursor: pointer;
+            font-size: 20px;
+            padding: 10px 20px;
+            border-radius: 6px;
+            outline: none;
+            border: none;
+            background-color: #2D6AFF;
+            border-bottom: 3px solid #0032b1;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #1557ff;
+        }
+        #carregando {
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 20px;
+        }
+        #sucesso {
+            display: none;
+            width: fit-content;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="carregando">
+        <img src="assets/carregando.svg" width="24" height="24">
+        🇬🇧 Loading...<br/>
+        🇧🇷 Carregando...<br/>
+        🇪🇸 Cargando...
+    </div>
+    <div id="sucesso">
+        <span style="font-size: 52px">🥳</span>
+        <h2>🇬🇧 Congratulations! You have subscribed to Airtext PRO!</h2>
+        <p>Now, just go to the app and refresh the page.</p>
+        <h2>🇧🇷 Parabéns! Você assinou o Airtext PRO!</h2>
+        <p>Agora, apenas volte ao app e atualize a página.</p>
+        <h2>🇪🇸 ¡Felicidades! ¡Te has suscrito a Airtext PRO!</h2>
+        <p>Ahora, simplemente ve a la aplicación y actualiza la página.</p>
+        <br/>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.3/dist/confetti.browser.js"></script>
+
+    <script>
+        setTimeout(() => {
+                    document.getElementById("carregando").style.display = 'none';
+                    document.getElementById("sucesso").style.display = 'flex';
+                    confetti({
+                    particleCount: 100,
+                    spread: 70,
+                    origin: { y: 0.6 },
+                    zIndex: 9999
+                })
+                }, "4500");
+    </script>
+</body>
+</html>
