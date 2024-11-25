@@ -14,11 +14,11 @@
         function redirectToStripeCheckout(email) {
             const stripe = Stripe('pk_test_51H8nFSJVDeGOx1BE0FnEeujSVTeUTzELHWZareDBpG9Bb4vt9djXeMHIVlpPe3dTMpfBBEF75zWOpb5STqNUYXUJ00FykAJCjp');
             stripe.redirectToCheckout({
-                lineItems: [{ price: 'price_1Q6u3nJVDeGOx1BEcTyIQ2zs', quantity: 1 }],
+                lineItems: [{ price: 'price_1QP9i9JVDeGOx1BEvk87SdMM', quantity: 1 }],
                 mode: 'subscription',
                 customerEmail: email,
-                successUrl: 'http://127.0.0.1:5500/ok.html',
-                cancelUrl: 'http://127.0.0.1:5500/',
+                successUrl: 'https://airtext.net/ok.html',
+                cancelUrl: 'https://airtext.net/',
             })
         }
     </script>
