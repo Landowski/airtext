@@ -11,10 +11,18 @@
             redirectToStripeCheckout(userEmail);
         }
 
+        const currency = detectUserCurrency();
+        let priceId;
+        if (currency === 'BRL') {
+            priceId = 'price_1QQViuJVDeGOx1BEInXnYdx6';
+        } else {
+            priceId = 'price_1QQVjJJVDeGOx1BE8JbMnXy9';
+        }
+
         function redirectToStripeCheckout(email) {
             const stripe = Stripe('pk_live_51H8nFSJVDeGOx1BERkH0kcptYEKgHkWiEn5RSqR3GIUabD6qWrzGEmyBX0bNUChuFvn2iBAtcqLSpc5bxx6DcOUy00aCMvsafk');
             stripe.redirectToCheckout({
-                lineItems: [{ price: 'price_1QQVjJJVDeGOx1BE8JbMnXy9', quantity: 1 }, { price: 'price_1QQViuJVDeGOx1BEInXnYdx6', quantity: 1 }],
+                lineItems: [{ price: priceId, quantity: 1 }],
                 mode: 'subscription',
                 customerEmail: email,
                 successUrl: 'https://airtext.net/ok.html',
