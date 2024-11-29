@@ -5,22 +5,19 @@
 </head>
 <body>
     <script>
+        function detectUserCurrency() {
+            const userLocale = navigator.language || navigator.userLanguage;
+            if (userLocale.startsWith('pt')) {
+                return 'BRL';
+            }
+                return 'USD';
+        }
+
         const urlParams = new URLSearchParams(window.location.search);
         const userEmail = urlParams.get('email');
-        if (userEmail) {
-            redirectToStripeCheckout(userEmail);
-        }
-
-        function detectUserCurrency() {
-        const userLocale = navigator.language || navigator.userLanguage;
-        if (userLocale.startsWith('pt')) {
-            return 'BRL';
-        }
-            return 'USD';
-        }
-
         const currency = detectUserCurrency();
         let priceId;
+
         if (currency === 'BRL') {
             priceId = 'price_1QQViuJVDeGOx1BEInXnYdx6';
         } else {
@@ -35,7 +32,11 @@
                 customerEmail: email,
                 successUrl: 'https://airtext.net/ok.html',
                 cancelUrl: 'https://airtext.net/',
-            })
+            });
+        }
+
+        if (userEmail) {
+            redirectToStripeCheckout(userEmail);
         }
     </script>
 </body>
