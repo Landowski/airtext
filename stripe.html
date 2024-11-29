@@ -14,9 +14,9 @@
         function detectUserCurrency() {
         const userLocale = navigator.language || navigator.userLanguage;
         if (userLocale.startsWith('pt')) {
-            return 'BRL'; // Português (Brasil)
+            return 'BRL';
         }
-        return 'USD'; // Padrão
+            return 'USD';
         }
 
         const currency = detectUserCurrency();
