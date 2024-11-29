@@ -11,6 +11,14 @@
             redirectToStripeCheckout(userEmail);
         }
 
+        function detectUserCurrency() {
+        const userLocale = navigator.language || navigator.userLanguage;
+        if (userLocale.startsWith('pt')) {
+            return 'BRL'; // Português (Brasil)
+        }
+        return 'USD'; // Padrão
+        }
+
         const currency = detectUserCurrency();
         let priceId;
         if (currency === 'BRL') {
