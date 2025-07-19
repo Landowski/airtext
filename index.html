@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airtext - Shortcuts for your texts</title>
+    <meta name="description" content="Airtext is a auto text expander that transforms shortcuts into ready-made texts, increasing your productivity quickly and simply. Install for free, save time!" />
+    <meta name="keywords" content="text expander, auto text expander, text expander free, text expander online, text expander, free online, text expander extension chrome, text expander login, text expander generator, text expander chrome extension free, text expander software, text expander app, text expander chrome free, text expander for chrome, text expander free alternative" />
+    <link rel="icon" type="image/png" href="../assets/icone32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <div style="display: flex; justify-content: space-between; align-items: center; width: 1180px;">
+            <div id="logo" style="display: flex; max-width: fit-content">
+                <img src="assets/icone32.png" width="32" height="32">
+                <span style="font-weight: 700; font-size: 30px; margin-top: 4px; color: #222; line-height: 1;">Airtext</span>
+            </div>
+            <a href="https://chromewebstore.google.com/detail/ffkfmajcjnnjgnkpheojcdhgpieblmdh" class="botao-header">Install free</a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="container-cta">
+            <div class="cta">
+                <span style="font-weight: 700; font-size: 46px; line-height: 1.2;">
+                    Your shortcuts and your productivity, at the speed of the wind
+                </span>
+                <span style="font-size: 20px; color: #616161; margin: 25px 0; line-height: 1.4;">
+                    Transform repetitive texts into quick commands and make your day more agile and efficient
+                </span>
+                <a class="botao" href="https://chromewebstore.google.com/detail/ffkfmajcjnnjgnkpheojcdhgpieblmdh">Start producing more 🌪️</a>
+            </div>
+            <div class="cta-box">
+                <span id="dynamic-text"></span>
+            </div>
+        </div>
+
+        <span style="font-size: 24px; color: #616161; margin-bottom: 10px; text-align: center;">
+            Try now:
+        </span>
+        <textarea id="teste" placeholder="Type **test or right-click with mouse"></textarea>
+        <ul id="custom-context-menu">
+            <li id="insert-shortcut">**test</li>
+        </ul>
+
+        <section>
+            <div class="container-features">
+
+                <span style="font-weight: 700; font-size: 40px; text-align: center; line-height: 1.2;">
+                    🌪️ Install a tornado in your productivity
+                </span>
+                <span style="font-size: 24px; text-align: center; color: #616161;">
+                    Automate your typing, avoiding errors and saving time
+                </span>
+
+                <div class="features">
+                    <div class="card">
+                        <img alt="Text Expander" style="border-radius: 10px; margin-right: 15px" src="assets/text-expander-custom-shortcuts.webp" width="70"><span><strong>Custom shortcuts</strong> that expand into full texts.</span>
+                    </div>
+                    <div class="card">
+                        <img alt="Text Expander" style="border-radius: 10px; margin-right: 15px" src="assets/text-expander-time.webp" width="70"><span>Replace commands with ready-made texts in any field on the web<strong> and save time on repetitive tasks</strong>.</span>
+                    </div>
+                </div>
+
+                <div class="features" style="align-self: flex-start;">
+                    <div class="card">
+                        <img alt="Text Expander" style="border-radius: 10px; margin-right: 15px" src="assets/text-expander-text-field.webp" width="70"><span><strong>Compatible with any text entry field</strong>: email, forms, WhatsApp Web, chatbots, programming editors...</span>
+                    </div>
+                    <div class="card">
+                        <img alt="Notificações on-site" style="border-radius: 10px; margin-right: 15px" src="assets/text-expander-right-mouse.webp" width="70"><span>The extension <strong>replaces your command with the full text</strong> while you are typing or you can choose by right mouse click!</span>
+                    </div>
+                </div>
+
+                <div class="features" style="align-self: flex-end;">
+                    <div class="card">
+                        <img alt="Text Expander" style="border-radius: 10px; margin-right: 15px" src="assets/text-expander-keyboard.webp" width="70"><span>It is the <strong>ideal extension for those who work with a lot of writing</strong>, such as support, programming, marketing, etc.</span>
+                    </div>
+                    <div class="card">
+                        <img alt="Text Expander" style="border-radius: 10px; margin-right: 15px" src="assets/text-expander-automation.webp" width="70"><span>Save hours a day with Airtext's <strong>simple and effective automation</strong>.</span>
+                    </div>
+                </div>
+
+                <div class="features" style="align-self: flex-start;">
+                    <div class="card">
+                        <img alt="Text Expander" style="border-radius: 10px; margin-right: 15px" src="assets/text-expander-idea.webp" width="70"><span>Have more time for important tasks and<strong> produce more in less time</strong>.</span>
+                    </div>
+                    <div class="card">
+                        <img alt="Text Expander" style="border-radius: 10px; margin-right: 15px" src="assets/text-expander-easy.webp" width="70"><span>Intuitive and <strong>easy-to-use interface</strong>.</span>
+                    </div>
+                </div>
+
+                <span style="font-weight: 700; font-size: 40px; text-align: center; line-height: 1.2; margin-top: 100px;">
+                    Airtext helps you save up to <span style="text-decoration-line: underline;
+                    text-decoration-style: double; color: #4285f4;">25 hours</span> per month
+                </span>
+
+                <div class="container-statistics">
+                    <div class="card-statistics">
+                        <span style="font-weight: 700; font-size: 36px; text-align: center;">
+                            ⬆️
+                        </span>
+                        <span style="font-weight: 400; font-size: 22px; text-align: center;">
+                            in productivity
+                        </span>
+                        <span style="font-weight: 400; font-size: 16px; text-align: center; color: #616161; margin-top: 10px;">
+                            using shortcuts instead of copying and pasting
+                        </span>
+                    </div>
+                    <div class="card-statistics">
+                        <span style="font-weight: 700; font-size: 36px; text-align: center;">
+                            ⌨️
+                        </span>
+                        <span style="font-weight: 400; font-size: 22px; text-align: center;">
+                            savings
+                        </span>
+                        <span style="font-weight: 400; font-size: 16px; text-align: center; color: #616161; margin-top: 10px;">
+                            when typing long texts on the keyboard
+                        </span>
+                    </div>
+                    <div class="card-statistics">
+                        <span style="font-weight: 700; font-size: 36px; text-align: center;">
+                            ❌
+                        </span>
+                        <span style="font-weight: 400; font-size: 22px; text-align: center;">
+                            less errors
+                        </span>
+                        <span style="font-weight: 400; font-size: 16px; text-align: center; color: #616161; margin-top: 10px;">
+                            by incorrect typing without proofreading
+                        </span>
+                    </div>
+                    <div class="card-statistics">
+                        <span style="font-weight: 700; font-size: 36px; text-align: center;">
+                            👥
+                        </span>
+                        <span style="font-weight: 400; font-size: 22px; text-align: center;">
+                            happy users
+                        </span>
+                        <span style="font-weight: 400; font-size: 16px; text-align: center; color: #616161; margin-top: 10px;">
+                            producing more in less time
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container-tutorial">            
+                <div class="tutorial">
+                    <div>
+                        <h2>Step 1 - Turn Shortcuts into Full Texts</h2>
+                        <p>Choose the command that best suits you to create your shortcut. Examples:
+                            <b>
+                            <br/>*tks
+                            <br/>/email
+                            <br/>:name
+                            <br/>[tutorial]
+                            <br/>--answer-sell
+                            </b>
+                        </p>
+                    </div>
+                    <img src="/assets/airtext-auto-text-expander-1.png" alt="Airtext Auto Text Expander - Shortcuts" style="width: 400px; height: auto;">
+                </div>
+                <div class="tutorial">
+                    <img src="/assets/airtext-auto-text-expander-2.png" alt="Airtext Auto Text Expander - Text Expanding" style="width: 400px; height: auto;">
+                    <div>
+                        <h2>Step 2 - Works on All Text Fields</h2>
+                        <p>Type your shortcut on any website and it will be replaced with the full text.</p>
+                    </div>
+                </div>
+                <div class="tutorial">
+                    <div>
+                        <h2>Step 3 - Quick and Easy Access</h2>
+                        <p>If you forgot your shortcut, right-click on the box and select your shortcuts directly from the <b>Airtext</b> menu, separated into categories!</p>
+                    </div>
+                    <img src="/assets/airtext-auto-text-expander-3.png" alt="Airtext Auto Text Expander - Menu" style="width: 400px; height: auto;">
+                </div>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-header">
+                      <div><span class="numero">01</span><span class="faq-title">What is Airtext?</span></div>
+                      <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-content">
+                        Airtext is a browser extension that allows you to replace typed shortcuts with pre-defined texts, increasing your productivity.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <div><span class="numero">02</span><span class="faq-title">How does it work?</span></div>
+                      <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-content">
+                        You define shortcuts like "**email**" and assign long texts like "myemail@example.com". When you type the shortcut, the long text is automatically inserted.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <div><span class="numero">03</span><span class="faq-title">Why use a text expander?</span></div>
+                      <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-content">
+                        Text expanders are a powerful productivity tool for increasing business and personal productivity. By automating repetitive typing tasks, they save time and effort, allowing you to focus on higher-level activities.
+                        <br/><br/>
+                        Companies can create standardized snippets or keyboard shortcuts for frequently used phrases, canned responses, automate data entry, email templates for meeting requests, and even product descriptions, ensuring brand consistency across teams . This not only saves time, but also ensures accuracy and professionalism in customer communication.
+                        <br/><br/>
+                        Personal Benefits: Increases operational efficiency, personal productivity and personalizes communication much faster than you can type it all. Individuals can leverage text expanders for frequently used email greetings, addresses, or even complex signatures. Additionally, text expanders can be used to store and insert custom snippets like jokes, inspirational quotes, or disclaimers, adding a touch of personality to your communication.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <div><span class="numero">04</span><span class="faq-title">Where do i install Airtext?</span></div>
+                      <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-content">
+                        Just click on the buttons on the website and you will be redirected to the Chrome Web Store, the Google Chrome extension store.
+                        <br/><br/>
+                        There, just click the "Add" button and the extension will be ready to use.
+                        <br/><br/>
+                        In the browser, click on the puzzle icon at the top right and click on the pin icon next to the Airtext text, and then the extension will be pinned to the browser's bookmark bar. Just click on the hurricane icon to open the app, register and start inserting your shortcuts and categories.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <div><span class="numero">05</span><span class="faq-title">Why use Airtext and not other text expanders?</span></div>
+                      <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-content">
+                        Airtext values simplicity and functionality. Its use is easy, fast and economical, unlike other text expanders such as Text Blaze, FlyMSG, Text Expander, Magical and Web Text Expander, which are expensive and bloated with too many features that are more of a hindrance than a help.
+                        <br/><br/>
+                        Furthermore, Airtext works on all websites with a text field, including Whatsapp Web, while some have not even been updated on the Chrome Store and do not really work on multiple text fields.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <div><span class="numero">06</span><span class="faq-title">Is it free?</span></div>
+                      <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-content">
+                        Yes! Airtext offers 15 free shortcuts and a PRO plan for those who need more for U$ 9.90 <b>A YEAR (less than 3 cents a day, unbeatable value for money!)</b>.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <div><span class="numero">07</span><span class="faq-title">What if I need help?</span></div>
+                      <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-content">
+                        You can use our <a href="help" target="blank">HELP</a> page or contact us by email <strong>landowskiapps@gmail.com</strong>.
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-bottom">
+                <span style="font-weight: 700; font-size: 46px; text-align: center; line-height: 1.2;">
+                    Simplify your routine with Airtext
+                </span>
+                <span style="font-size: 20px; text-align: center; color: #616161; line-height: 1.4;">
+                    Start saving time and energy now with smart shortcuts.
+                    <br/>
+                    Install for free and see the difference!
+                </span>
+                <a class="botao" href="https://chromewebstore.google.com/detail/ffkfmajcjnnjgnkpheojcdhgpieblmdh" style="align-self: center;">👉 Install now and accelerate your productivity</a>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>Airtext <span id="date"></span></p> • <a href="help" target="_blank">Help</a> • <a href="privacy" target="_blank">Privacy Policy</a>
+        </footer>
+    </div>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
